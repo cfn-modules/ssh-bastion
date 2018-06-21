@@ -62,21 +62,21 @@ Use `ssh -J $UserName@$BastionPublicIpAddress $TargetPrivateIpAddress` and repla
   <tbody>
     <tr>
       <td>VpcModule</td>
-      <td>Stack name of vpc module</td>
+      <td>Stack name of <a href="https://www.npmjs.com/package/@cfn-modules/vpc">vpc module</a></td>
       <td></td>
       <td>yes</td>
       <td></td>
     </tr>
     <tr>
       <td>AlertingModule</td>
-      <td>Stack name of alerting module</td>
+      <td>Stack name of <a href="https://www.npmjs.com/package/@cfn-modules/alerting">alerting module</a></td>
       <td></td>
       <td>no</td>
       <td></td>
     </tr>
     <tr>
       <td>HostedZoneModule</td>
-      <td>Stack name of module implementing HostedZone</td>
+      <td>Stack name of <a href="https://www.npmjs.com/search?q=keywords:cfn-modules:HostedZone">module implementing HostedZone</a></td>
       <td></td>
       <td>no</td>
       <td></td>
