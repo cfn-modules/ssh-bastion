@@ -337,7 +337,7 @@ Resources:
           - 'autoscaling:EC2_INSTANCE_TERMINATE_ERROR'
           TopicARN:
             'Fn::ImportValue': !Sub '${AlertingModule}-Arn'
-      - !Ref 'AWS::NoValue'
+      - []
       VPCZoneIdentifier: !Split
       - ','
       - 'Fn::ImportValue':
