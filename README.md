@@ -119,3 +119,8 @@ Use `ssh -J $UserName@$BastionPublicIpAddress $TargetPrivateIpAddress` and repla
     </tr>
   </tbody>
 </table>
+
+## Limitations
+
+* Highly available: A single EC2 instance is running at a time (will be automatically replaced in case of failure)
+* Scalable: EC2 instances capacity (CPU, RAM, network, ...) is limited by design
