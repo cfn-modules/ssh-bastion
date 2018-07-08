@@ -15,7 +15,7 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Description: 'cfn-modules: SSH bastion'
 # cfn-modules:implements(Bastion)
-# TODO could be based on an asg-singleton-amazon-linux module
+# TODO could be based on module asg-singleton-amazon-linux2
 Parameters:
   VpcModule:
     Description: 'Stack name of vpc module.'
@@ -114,10 +114,7 @@ Resources:
   SecurityGroup:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
-      GroupDescription: !Sub
-      - 'SSH bastion ${CidrBlock}'
-      - CidrBlock:
-          'Fn::ImportValue': !Sub '${VpcModule}-CidrBlock'
+      GroupDescription: !Ref 'AWS::StackName'
       SecurityGroupIngress:
       - IpProtocol: tcp
         FromPort: 22

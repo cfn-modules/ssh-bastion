@@ -124,3 +124,5 @@ Use `ssh -J $UserName@$BastionPublicIpAddress $TargetPrivateIpAddress` and repla
 
 * Highly available: A single EC2 instance is running at a time (will be automatically replaced in case of failure)
 * Scalable: EC2 instances capacity (CPU, RAM, network, ...) is limited by design
+* Secure: Root volume is not encrypted at-rest (not possible unless the AMI is encrypted)
+* Secure: Root volume it not backed up
