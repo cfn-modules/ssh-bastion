@@ -21,7 +21,7 @@ npm i @cfn-modules/ssh-bastion
 AWSTemplateFormatVersion: '2010-09-09'
 Description: 'cfn-modules example'
 Resources:
-  Function:
+  Bastion:
     Type: 'AWS::CloudFormation::Stack'
     Properties:
       Parameters:
