@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "dependencies": {
+    "eslint": "5.1.0",
+    "ava": "0.25.0",
+    "@cfn-modules/test": "^0.1.2",
+    "@cfn-modules/ssh-bastion": "file:../",
+    "@cfn-modules/vpc": "^0.0.30"
+  },
+  "scripts": {
+    "test": "eslint . && ava -c 4 *.js"
+  }
+}
