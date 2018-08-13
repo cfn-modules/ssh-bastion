@@ -23,7 +23,7 @@ test('key-name', async t => {
       }));
       const outputs = await cfntest.getStackOutputs(stackName);
       t.log(outputs);
-      await cfntest.probeSSH(`ec2-user@${outputs.PublicIpAddress}`, key);
+      t.log(await cfntest.probeSSH(`ec2-user@${outputs.PublicIpAddress}`, key));
     } finally {
       t.log(await cfntest.deleteStack(stackName));
     }
