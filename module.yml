@@ -374,7 +374,7 @@ Outputs:
   ModuleId:
     Value: 'ssh-bastion'
   ModuleVersion:
-    Value: '0.0.5'
+    Value: '1.0.0'
   StackName:
     Value: !Ref 'AWS::StackName'
   SecurityGroupId:
