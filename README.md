@@ -129,3 +129,4 @@ Use `ssh -J $UserName@$BastionPublicIpAddress $TargetPrivateIpAddress` and repla
 * Scalable: EC2 instances capacity (CPU, RAM, network, ...) is limited by design
 * Secure: Root volume is not encrypted at-rest (not possible unless the AMI is encrypted)
 * Secure: Root volume it not backed up
+* Monitoring: Network In+Out is not monitored according to capacity of instance type
