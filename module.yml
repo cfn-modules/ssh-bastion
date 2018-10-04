@@ -154,7 +154,7 @@ Resources:
             - 'logs:CreateLogStream'
             - 'logs:PutLogEvents'
             - 'logs:DescribeLogStreams'
-            Resource: '*'
+            Resource: !GetAtt 'LogGroup.Arn'
   PolicySshAccess:
     Type: 'AWS::IAM::Policy'
     Condition: HasIAMUserSSHAccess
