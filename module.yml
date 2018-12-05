@@ -47,12 +47,12 @@ Parameters:
     Default: 14
     AllowedValues: [1, 3, 5, 7, 14, 30, 60, 90, 120, 150, 180, 365, 400, 545, 731, 1827, 3653]
   SubDomainNameWithDot:
-    Description: 'Name that is used to create the DNS entry with trailing dot, e.g. ${SubDomainNameWithDot}${HostedZoneName}. Leave blank for naked (or apex and bare) domain. Requires HostedZoneModule parameter!'
+    Description: 'Name that is used to create the DNS entry with trailing dot, e.g. §{SubDomainNameWithDot}§{HostedZoneName}. Leave blank for naked (or apex and bare) domain. Requires HostedZoneModule parameter!'
     Type: String
     Default: 'ssh.'
 Mappings:
   RegionMap:
-   'ap-south-1':
+    'ap-south-1':
       ImageId: 'ami-0bc6e84391ec20816'
     'eu-west-3':
       ImageId: 'ami-0fad8cb11d5e5a502'
