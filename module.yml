@@ -56,6 +56,8 @@ Mappings:
       ImageId: 'ami-0bc6e84391ec20816'
     'eu-west-3':
       ImageId: 'ami-0fad8cb11d5e5a502'
+    'eu-north-1':
+      ImageId: 'ami-68ef6116'
     'eu-west-2':
       ImageId: 'ami-0307e8ce88a8245d4'
     'eu-west-1':
