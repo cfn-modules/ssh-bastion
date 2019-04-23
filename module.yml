@@ -176,7 +176,7 @@ Resources:
           Action:
           - 'iam:ListSSHPublicKeys'
           - 'iam:GetSSHPublicKey'
-          Resource: !Sub 'arn:aws:iam::${AWS::AccountId}:user/*'
+          Resource: !Sub 'arn:${AWS::Partition}:iam::${AWS::AccountId}:user/*'
         - Effect: Allow
           Action: 'ec2:DescribeTags'
           Resource: '*'
