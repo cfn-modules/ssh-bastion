@@ -176,7 +176,7 @@ Resources:
           Action:
           - 'iam:ListSSHPublicKeys'
           - 'iam:GetSSHPublicKey'
-          Resource: !Sub 'arn:aws:iam::${AWS::AccountId}:user/*'
+          Resource: !Sub 'arn:${AWS::Partition}:iam::${AWS::AccountId}:user/*'
         - Effect: Allow
           Action: 'ec2:DescribeTags'
           Resource: '*'
@@ -375,7 +375,7 @@ Outputs:
   ModuleId:
     Value: 'ssh-bastion'
   ModuleVersion:
-    Value: '1.4.1'
+    Value: '1.4.2'
   StackName:
     Value: !Ref 'AWS::StackName'
   SecurityGroupId:
