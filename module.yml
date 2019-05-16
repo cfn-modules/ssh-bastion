@@ -153,6 +153,7 @@ Resources:
           Statement:
           - Effect: Allow
             Action:
+            - 'logs:CreateLogGroup'
             - 'logs:CreateLogStream'
             - 'logs:PutLogEvents'
             - 'logs:DescribeLogStreams'
@@ -375,7 +376,7 @@ Outputs:
   ModuleId:
     Value: 'ssh-bastion'
   ModuleVersion:
-    Value: '1.4.2'
+    Value: '1.4.3'
   StackName:
     Value: !Ref 'AWS::StackName'
   SecurityGroupId:

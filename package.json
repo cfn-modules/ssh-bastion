@@ -1,6 +1,6 @@
 {
   "name": "@cfn-modules/ssh-bastion",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "SSH bastion (jump server, bastion host) based on Amazon Linux with a fixed public IP address (Elastic IP), running in a 1:1:1 auto scaling group, alerting, and IAM user SSH access.",
   "author": "Michael Wittig <michael@widdix.de>",
   "license": "Apache-2.0",
