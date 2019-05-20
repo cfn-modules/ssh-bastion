@@ -39,6 +39,7 @@ Resources:
 ## Examples
 
 * [ec2-ssh-bastion](https://github.com/cfn-modules/docs/tree/master/examples/ec2-ssh-bastion)
+* [ec2-ssm](https://github.com/cfn-modules/docs/tree/master/examples/ec2-ssm)
 
 ## Related modules
 
