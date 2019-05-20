@@ -36,6 +36,14 @@ Resources:
       TemplateURL: './node_modules/@cfn-modules/ssh-bastion/module.yml'
 ```
 
+## Examples
+
+* [ec2-ssh-bastion](https://github.com/cfn-modules/docs/tree/master/examples/ec2-ssh-bastion)
+
+## Related modules
+
+none
+
 ## SSH
 
 ### Single user: ec2-user
