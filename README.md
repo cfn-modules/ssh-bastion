@@ -1,6 +1,3 @@
-[![Build Status](https://travis-ci.org/cfn-modules/ssh-bastion.svg?branch=master)](https://travis-ci.org/cfn-modules/ssh-bastion)
-[![NPM version](https://img.shields.io/npm/v/@cfn-modules/ssh-bastion.svg)](https://www.npmjs.com/package/@cfn-modules/ssh-bastion)
-
 # cfn-modules: SSH bastion
 
 SSH bastion (jump server, bastion host) based on Amazon Linux with a fixed public IP address (Elastic IP), running in a 1:1:1 auto scaling group, [alerting](https://www.npmjs.com/package/@cfn-modules/alerting), and [IAM user SSH access](https://github.com/widdix/aws-ec2-ssh).
