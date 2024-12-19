@@ -1,16 +1,19 @@
 {
   "name": "@cfn-modules/ssh-bastion",
-  "version": "1.4.4",
+  "version": "1.5.0",
   "description": "SSH bastion (jump server, bastion host) based on Amazon Linux with a fixed public IP address (Elastic IP), running in a 1:1:1 auto scaling group, alerting, and IAM user SSH access.",
   "author": "Michael Wittig <michael@widdix.de>",
   "license": "Apache-2.0",
-  "keywords": ["cfn-modules", "cfn-modules:Bastion"],
+  "keywords": [
+    "cfn-modules",
+    "cfn-modules:Bastion"
+  ],
   "homepage": "https://github.com/cfn-modules",
   "bugs": {
     "url": "https://github.com/cfn-modules/ssh-bastion/issues"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/cfn-modules/ssh-bastion.git"
+    "type": "git",
+    "url": "https://github.com/cfn-modules/ssh-bastion.git"
   }
 }
